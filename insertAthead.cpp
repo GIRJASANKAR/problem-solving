@@ -1,12 +1,12 @@
-#include<bits/stdc++.h>
+#include<iostream>
 using namespace std;
 
 class Node{
     public:
      int data;
      Node* next;
-  Node(int x){
-     this->data=x;
+    Node(int x){
+      this->data=x;
      this->next=NULL;
  }
 };
@@ -32,9 +32,10 @@ void insertAtTail(Node* &head,int val){
 void printLL(Node* head){
       Node* ptr=head;
     while(ptr!=NULL){
-        cout<<ptr->data<<" ";
+        cout<<ptr->data<<"--> ";
         ptr=ptr->next;
     }
+    cout<<"NULL"<<endl;
 }
 
 int main(){
