@@ -5,17 +5,15 @@ class Node{
     public:
      int data;
      Node* next;
-    Node(int x){
+   Node(int x){
       this->data=x;
      this->next=NULL;
  }
 };
-
 void insertAtHead(Node* &head,Node* node2){
     node2->next=head;
     head=node2;
 }
-
 void insertAtTail(Node* &head,int val){
     cout<<"hey";
     Node* ptr=head;
